@@ -19,7 +19,13 @@
         "react-native-gesture-handler": "^2.13.4",
         "react-native-reanimated": "^3.5.4",
         "react-native-screens": "^3.27.0",
-        "twrnc": "^3.6.4"
+        "twrnc": "^3.6.4",
+        "solc": "^0.8.18",
+        "web3": "^1.7.1",
+        "@truffle/hdwallet-provider": "^2.1.15",
+        "fs-extra": "^11.1.1",
+        "ganache-cli": "^6.12.2",
+        "mocha": "^10.2.0"
     },
     "devDependencies": {
         "@babel/core": "^7.20.0"
