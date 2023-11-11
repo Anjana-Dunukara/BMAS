@@ -10,6 +10,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "1.18.2",
     "@react-navigation/native": "^6.1.9",
     "@react-navigation/stack": "^6.3.20",
     "@truffle/hdwallet-provider": "^2.1.15",
@@ -22,8 +23,10 @@
     "react": "18.2.0",
     "react-native": "0.72.6",
     "react-native-gesture-handler": "~2.12.0",
+    "react-native-onboarding-swiper": "^1.2.0",
     "react-native-reanimated": "~3.3.0",
     "react-native-screens": "~3.22.0",
+    "react-native-vector-icons": "^10.0.2",
     "solc": "^0.8.18",
     "twrnc": "^3.6.4",
     "web3": "^1.7.1"

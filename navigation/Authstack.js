@@ -5,12 +5,18 @@ import CustomerPage from "../screens/CustomerPage";
 import ManufacturerPage from "../screens/ManufacturerPage";
 import AddProductPage from "../screens/AddProductPage";
 import ListProductsScreen from "../screens/ListProductsScreen";
+import OnBoardingScreen from "../screens/OnBoardingScreen";
 
 const Stack = createStackNavigator();
 
 const AuthStack = () => {
   return (
-    <Stack.Navigator initialRouteName="LandingPage">
+    <Stack.Navigator initialRouteName="Onboarding">
+      <Stack.Screen
+        name="Onboarding"
+        component={OnBoardingScreen}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen
         name="LandingPage"
         component={LandingPage}
