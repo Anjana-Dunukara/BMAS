@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, { useContext, useState } from "react";
 import {
   View,
   Text,
@@ -6,26 +6,23 @@ import {
   Image,
   Platform,
   StyleSheet,
-  ScrollView
-} from 'react-native';
-import FormInput from '../components/FormInput';
-import FormButton from '../components/FormButton';
-import SocialButton from '../components/SocialButton';
-import {AuthContext} from '../navigation/AuthProvider';
+  ScrollView,
+} from "react-native";
+import FormInput from "../components/FormInput";
+import FormButton from "../components/FormButton";
+import SocialButton from "../components/SocialButton";
+// import { AuthContext } from "../navigation/AuthProvider";
 
-const LoginScreen = ({navigation}) => {
+const LoginScreen = ({ navigation }) => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const {login, googleLogin, fbLogin} = useContext(AuthContext);
+  //   const { login, googleLogin, fbLogin } = useContext(AuthContext);
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Image
-        source={require('../assets/rn-social-logo.png')}
-        style={styles.logo}
-      />
-      <Text style={styles.text}>RN Social App</Text>
+      <Image source={require("../assets/splash.png")} style={styles.logo} />
+      <Text style={styles.text}>BMAS App</Text>
 
       <FormInput
         labelValue={email}
@@ -54,16 +51,8 @@ const LoginScreen = ({navigation}) => {
         <Text style={styles.navButtonText}>Forgot Password?</Text>
       </TouchableOpacity>
 
-      {Platform.OS === 'android' ? (
+      {Platform.OS === "android" ? (
         <View>
-          <SocialButton
-            buttonTitle="Sign In with Facebook"
-            btnType="facebook"
-            color="#4867aa"
-            backgroundColor="#e6eaf4"
-            onPress={() => fbLogin()}
-          />
-
           <SocialButton
             buttonTitle="Sign In with Google"
             btnType="google"
@@ -76,9 +65,10 @@ const LoginScreen = ({navigation}) => {
 
       <TouchableOpacity
         style={styles.forgotButton}
-        onPress={() => navigation.navigate('Signup')}>
+        onPress={() => navigation.navigate("Signup")}
+      >
         <Text style={styles.navButtonText}>
-          Don't have an acount? Create here
+          Don't have an account? Create here
         </Text>
       </TouchableOpacity>
     </ScrollView>
@@ -89,21 +79,21 @@ export default LoginScreen;
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     padding: 20,
-    paddingTop: 50
+    paddingTop: 50,
   },
   logo: {
     height: 150,
     width: 150,
-    resizeMode: 'cover',
+    resizeMode: "cover",
   },
   text: {
-    fontFamily: 'Kufam-SemiBoldItalic',
+    fontFamily: "Kufam-SemiBoldItalic",
     fontSize: 28,
     marginBottom: 10,
-    color: '#051d5f',
+    color: "#051d5f",
   },
   navButton: {
     marginTop: 15,
@@ -113,8 +103,8 @@ const styles = StyleSheet.create({
   },
   navButtonText: {
     fontSize: 18,
-    fontWeight: '500',
-    color: '#2e64e5',
-    fontFamily: 'Lato-Regular',
+    fontWeight: "500",
+    color: "#2e64e5",
+    fontFamily: "Lato-Regular",
   },
 });

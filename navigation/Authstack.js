@@ -6,6 +6,7 @@ import ManufacturerPage from "../screens/ManufacturerPage";
 import AddProductPage from "../screens/AddProductPage";
 import ListProductsScreen from "../screens/ListProductsScreen";
 import OnBoardingScreen from "../screens/OnBoardingScreen";
+import LoginScreen from "../screens/LoginScreen";
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,11 @@ const AuthStack = () => {
       <Stack.Screen
         name="LandingPage"
         component={LandingPage}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="LoginScreen"
+        component={LoginScreen}
         options={{ headerShown: false }}
       />
       <Stack.Screen name="CustomerPage" component={CustomerPage} />

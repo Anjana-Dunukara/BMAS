@@ -7,7 +7,7 @@ const LandingPage = () => {
   const navigation = useNavigation();
 
   const navigateToManufacturer = () => {
-    navigation.navigate("ManufacturerPage");
+    navigation.navigate("LoginScreen");
   };
 
   const navigateToCustomer = () => {
