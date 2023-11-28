@@ -28,7 +28,11 @@ const AuthStack = () => {
         component={LoginScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="CustomerPage" component={CustomerPage} />
+      <Stack.Screen
+        name="CustomerPage"
+        component={CustomerPage}
+        options={{ headerShown: false }}
+      />
       <Stack.Screen name="ManufacturerPage" component={ManufacturerPage} />
       <Stack.Screen name="AddProductPage" component={AddProductPage} />
       <Stack.Screen name="ListProductsScreen" component={ListProductsScreen} />

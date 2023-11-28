@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1074601223366",
+    "project_id": "bmas-c4109",
+    "storage_bucket": "bmas-c4109.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1074601223366:android:77e2b7c61634fdf09623c7",
+        "android_client_info": {
+          "package_name": "com.anjanadunukara.myapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1074601223366-kf9motp2967m941c0026avevou7b2eqd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrO_JDxN95LMh6Y_-CzBje1kTbQfQjdVI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1074601223366-kf9motp2967m941c0026avevou7b2eqd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1074601223366-qfatrs5fr361prp78vv335ndd848fr6i.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.anjanadunukara.myapp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
